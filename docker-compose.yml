@@ -1,0 +1,10 @@
+version: '3'
+services: 
+ httpd:
+  build: 
+   dockerfile: Dockerfile
+  ports:
+    - "80:80"
+  volumes:
+    - /root/project-apache/public-html:/usr/local/apache2/htdocs/
+
